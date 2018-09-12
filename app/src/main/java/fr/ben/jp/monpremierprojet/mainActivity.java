@@ -34,6 +34,24 @@ public class mainActivity extends AppCompatActivity{
                 playSound(R.raw.singe);
             }
         });
+
+        ImageView imgBallon = (ImageView)findViewById(R.id.imageBallon);
+
+        imgBallon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                playSound(R.raw.but);
+            }
+        });
+
+        ImageView imgPavard = (ImageView)findViewById(R.id.imagePavard);
+
+        imgPavard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                playSound(R.raw.pavard);
+            }
+        });
     }
 
     private void playSound(int resId) {

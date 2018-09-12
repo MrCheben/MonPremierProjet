@@ -22,4 +22,22 @@
         android:layout_toRightOf="@id/imageChevre"
         android:src="@drawable/singe" />
 
+    <ImageView
+        android:id="@+id/imageBallon"
+        android:layout_height="128dp"
+        android:layout_width="128dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/imageChevre"
+        android:src="@drawable/ballon" />
+    <ImageView
+        android:id="@+id/imagePavard"
+        android:layout_height="128dp"
+        android:layout_width="128dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/imageChevre"
+        android:layout_toRightOf="@id/imageBallon"
+        android:src="@drawable/pavard" />
+
 </RelativeLayout>
