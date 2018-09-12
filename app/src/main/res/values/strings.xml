@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MonPremierProjet</string>
+    <string name="txtClic">CLIC !</string>
 </resources>

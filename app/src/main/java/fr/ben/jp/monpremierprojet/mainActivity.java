@@ -1,7 +1,10 @@
 package fr.ben.jp.monpremierprojet;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
 
 public class mainActivity extends AppCompatActivity{
 
@@ -9,5 +12,15 @@ public class mainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final MediaPlayer mPlayer = MediaPlayer.create(this, R.raw.bouc);
+
+        ImageView img = (ImageView)findViewById(R.id.imageChevre);
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mPlayer.start();
+            }
+        });
     }
 }
